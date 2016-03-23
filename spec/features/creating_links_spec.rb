@@ -1,4 +1,4 @@
-feature '#Creating links' do
+feature 'Creating links' do
   scenario '> should add link to database' do
     visit ('/links/new')
     fill_in :url, with: 'www.google.com'
