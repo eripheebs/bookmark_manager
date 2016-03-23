@@ -4,6 +4,7 @@ require 'capybara/rspec'
 require './app/app'
 require 'tilt/erb'
 require 'database_cleaner'
+require 'features/web_helper'
 
 require File.join(File.dirname(__FILE__), '..', 'app/app.rb')
 
