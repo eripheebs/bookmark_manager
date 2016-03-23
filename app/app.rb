@@ -24,8 +24,8 @@ class BookmarkManager < Sinatra::Base
     tags.each do |name|
       tag = Tag.create(tag: name)
       link.tags << tag
-      link.save
     end
+    link.save
     redirect '/links'
   end
 
