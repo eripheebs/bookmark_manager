@@ -7,6 +7,10 @@ class BookmarkManager < Sinatra::Base
   get '/' do
   end
 
+  get '/sign_up' do
+    erb :sign_up
+  end
+
   get '/links' do
     @links = Link.all
     erb :'links/index'
